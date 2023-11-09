@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+html{
+     padding: 0;
+     margin: 870;
+}
+body {
+     height: 100vh;
+     display: grid;
+     vertical-align: middle;
+     background: rgb(19,32,67);
+     background: linear-gradient(0deg, rgba(19,32,67,1) 0%, rgba(31,65,114,1) 100%);
+}
+h1{
+     color: #FDF0F0;
+     font-family: 'Young Serif', serif;
+     font-size: 3rem;
+     padding: 0.5em;
+     margin: 0;
+     font-style: italic;
+}
+img{
+     border: solid 5px #F1B4BB;
+     border-radius: 25px;
+     -moz-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 10px inset;
+     -webkit-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 10px inset;
+     box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 10px inset
+}
+div {
+     justify-content: center;
+     text-align: center;
+     place-self: center;
+     padding-bottom: 2em;
+}
+ion-icon{
+     padding-top: 50%;
+     padding-bottom: 50%;
+     font-size: 3em;
+     color: #F1B4BB;
+     vertical-align: center;
+     cursor: pointer;
+}
+   

@@ -1,0 +1,36 @@
+<!--Padilla, Kervin Clyde S.-->
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <link rel="stylesheet" href="./style.css">
+     </head>
+     <body>
+          <!--buttons-->
+          <div>
+               <h1>Seoul Mate</h1>
+               <div>
+               <ion-icon name="chevron-back-circle" onclick="prev()"></ion-icon>
+               <img id="slider" src="1.jpg" width="300px" height="450px"/>
+               <ion-icon name="chevron-forward-circle" onclick="next()"></ion-icon>
+               </div>
+          </div>
+          <!--js-->
+          <script>
+               var images = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"];
+               var num = 0;
+               function next(){
+                    var slider = document.getElementById("slider"); num++;
+                    if (num >= images.length){ num = 0; }
+                    slider.src = images[num];
+               }   
+               function prev(){
+                    var slider = document.getElementById("slider"); num--;
+                    if (num < 0){ num = images.length-1 }
+                    slider.src = images[num];
+               }   
+          </script>
+          <!--icons-->
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     </body>
+</html>
